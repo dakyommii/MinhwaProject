@@ -73,7 +73,7 @@ YOLOv5, koGPT2
 
 ##### koGPT2 설계도
 <p align="center">
-  <img src="https://github.com/dakyommii/MinhwaProject/assets/77051968/7abd3b68-ba9d-46aa-846c-57d9180c2c21" alt="flowchart" width="200">
+  <img src="https://github.com/dakyommii/MinhwaProject/assets/77051968/6c87cde7-f4bd-4673-a95e-1babd707a303" alt="flowchart">
 </p>
 
 
