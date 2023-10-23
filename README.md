@@ -55,7 +55,6 @@ YOLOv5, koGPT2
   <img src="https://github.com/dakyommii/MinhwaProject/assets/77051968/6eb37423-e856-4fed-af57-d00684050573" alt="flowchart">
 </p>
 
-
 ### 기능 상세
 #### Step 1. YOLOv5 모델로 민화 속 객체 인식 
 민화 속 객체를 인식하여 이름과 민화 내에서의 위치 정보를 추출하였습니다. 위치 정보를 활용해 객체 간 상하좌우 관계를 파악하였고 이를 민화 설명 데이터셋 구축에 활용하였습니다.
@@ -65,10 +64,16 @@ YOLOv5, koGPT2
 객체의 색상을 분류하기 위해 먼저, K-Means Clustering 방법을 활용해 객체 내에서 주요 색상을 추출하였습니다. 이후, RGB에서 HSV로 변환하여 색상 분류기를 통해 색상을 판별하였습니다.
 
 ##### 색상 분류기 설계도
+<p align="center">
+  <img src="https://github.com/dakyommii/MinhwaProject/assets/77051968/7abd3b68-ba9d-46aa-846c-57d9180c2c21" alt="flowchart" width="200">
+</p>
 
 #### Step 3. 민화 설명문 자동 생성을 위한 koGPT2 fine-tuning
 객체 명 레이블, 민화 장르, 객체의 위치 및 색상 정보를 바탕으로 작성된 민화 설명문을 각각의 레이블로 데이터셋을 구축하였습니다. 이를 기존 koGPT2 토크나이저에 추가하여 민화 객체 명이 입력되면, 이에 기반한 민화 설명문이 출력될 수 있도록 모델을 fine-tuning 하였습니다.
 
-ko-GPT2 설계도
+##### koGPT2 설계도
+<p align="center">
+  <img src="https://github.com/dakyommii/MinhwaProject/assets/77051968/7abd3b68-ba9d-46aa-846c-57d9180c2c21" alt="flowchart" width="200">
+</p>
 
 
